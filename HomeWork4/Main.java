@@ -14,14 +14,14 @@ public class Main {
         array.set(2,23);
         array.remove(0);
 
-        System.out.println(array.contains(23));
-        System.out.println(array.getIndexElement(45));
-        System.out.println(array.sum());
-        System.out.println(array.multy());
-        System.out.println(array.get(1));
-        System.out.println(array.getMax());
-        System.out.println(array.getMin());
-        System.out.println(array.getLength());
+//        System.out.println(array.contains(23));
+//        System.out.println(array.getIndexElement(45));
+        System.out.println(array.summ(Integer::sum));
+//        System.out.println(array.multy());
+//        System.out.println(array.get(1));
+//        System.out.println(array.getMax());
+//        System.out.println(array.getMin());
+//        System.out.println(array.getLength());
 
         array.bubbleSort();
 

@@ -75,17 +75,25 @@ public class DynamicArray<T extends Comparable<T>> {
         return max;
     }
 
-    public T sum() {
-        if (length == 0) {
-            throw new IllegalArgumentException("Массив пустой");
+//    public T sum() {
+//        if (length == 0) {
+//            throw new IllegalArgumentException("Массив пустой");
+//        }
+//        if (array[0] instanceof Integer sum) {
+//            for (int i = 1; i < length; i++) {
+//                sum = sum + ((Integer) array[i]);
+//            }
+//            return (T) sum;
+//        }
+//        return null;
+//    }
+
+    public T summ(SummArgs<T> opertation) {
+        T result = array[0];
+        for (int i = 1; i < array.length; i++) {
+            result = opertation.operation(result, array[i]);
         }
-        if (array[0] instanceof Integer sum) {
-            for (int i = 1; i < length; i++) {
-                sum = sum + ((Integer) array[i]);
-            }
-            return (T) sum;
-        }
-        return null;
+        return result;
     }
 
     public T multy() {

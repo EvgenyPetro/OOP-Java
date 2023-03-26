@@ -1,4 +1,7 @@
-package Homework5;
+package Homework6.fileManager.reader.impl;
+
+import Homework6.fileManager.reader.PhoneBookReader;
+import Homework6.model.Contact;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,16 +14,16 @@ public class CSVPhoneBookReader implements PhoneBookReader {
     Scanner scanner;
     List<Contact> phoneBook = new ArrayList<>();
 
-    public CSVPhoneBookReader(File file) {
+    public CSVPhoneBookReader(String file) {
         try {
-            this.scanner = new Scanner(file);
+            this.scanner = new Scanner(new File(file));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
     @Override
-    public List<Contact> readPhone() {
+    public List<Contact> readPhoneBook() {
 
         while (scanner.hasNext()) {
             String[] phoneBook = scanner.nextLine().split(": ");

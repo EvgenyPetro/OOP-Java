@@ -1,5 +1,5 @@
 package Homework5;
 
 public interface PhoneBookWriter {
-    void writePhoneBook(PhoneBook phoneBook);
+    void writePhoneBook(Contact phoneBook);
 }

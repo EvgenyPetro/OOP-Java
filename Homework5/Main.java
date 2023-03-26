@@ -12,8 +12,8 @@ public class Main {
 
         service.printBook();
 
-        PhoneBook phoneBook1 = new PhoneBook("Filip", "Ivanovich", "89213452345");
-        PhoneBook phoneBook2 = new PhoneBook("Albert", "Rodionovich", "89213452345");
+        Contact phoneBook1 = new Contact("Filip", "Ivanovich", "89213452345");
+        Contact phoneBook2 = new Contact("Albert", "Rodionovich", "89213452345");
 
         service.writePhone(phoneBook1);
         service.writePhone(phoneBook2);

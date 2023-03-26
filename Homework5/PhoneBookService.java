@@ -15,7 +15,7 @@ public class PhoneBookService {
         phoneBookReader.readPhone().forEach(System.out::println);
     }
 
-    public void writePhone(PhoneBook phoneBook) {
+    public void writePhone(Contact phoneBook) {
         phoneBookWriter.writePhoneBook(phoneBook);
     }
 }

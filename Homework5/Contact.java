@@ -1,11 +1,11 @@
 package Homework5;
 
-public class PhoneBook {
+public class Contact {
     private String name;
     private String surname;
     private String phone;
 
-    public PhoneBook(String name, String surname, String phone) {
+    public Contact(String name, String surname, String phone) {
         this.name = name;
         this.surname = surname;
         this.phone = phone;
@@ -25,7 +25,7 @@ public class PhoneBook {
 
     @Override
     public String toString() {
-        return "PhoneBook{" +
+        return "Contact{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", phone='" + phone + '\'' +

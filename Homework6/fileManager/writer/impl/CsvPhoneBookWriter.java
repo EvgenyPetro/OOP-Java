@@ -1,4 +1,8 @@
-package Homework5;
+package Homework6.fileManager.writer.impl;
+
+
+import Homework6.fileManager.writer.PhoneBookWriter;
+import Homework6.model.Contact;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,9 +22,11 @@ public class CsvPhoneBookWriter implements PhoneBookWriter {
     }
 
     @Override
-    public void writePhoneBook(Contact phoneBook) {
+    public void save(Contact phoneBook) {
         writer.println("\n");
         writer.printf("%s %s: %s", phoneBook.getName(), phoneBook.getSurname(), phoneBook.getPhone());
         writer.flush();
     }
+
+
 }
